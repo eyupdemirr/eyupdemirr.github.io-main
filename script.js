@@ -4,8 +4,8 @@ const toggleThemeBtn = document.querySelector(".toggle-theme-btn");
 function toggleTheme() {
   document.body.classList.toggle("dark");
   toggleThemeBtn.textContent = document.body.classList.contains("dark")
-    ? "Açık Mod"
-    : "Koyu Mod";
+    ? "Light Mode"
+    : "Dark Mode";
   localStorage.setItem(
     "theme",
     document.body.classList.contains("dark") ? "dark" : "light"
