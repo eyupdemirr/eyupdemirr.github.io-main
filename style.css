@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+  height: 100vh;
+}
+
+.loader {
+  width: 290px;
+  height: auto;
+  padding: 30%;
+  font-size: 20px;
+  text-align: center;
+  border: 4px solid #545454;
+  animation: spin 1s ease-in-out infinite;
+}
+
+.toggle-theme-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark .toggle-theme-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Animasyon özellikleri */
+@keyframes yanipSon {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Animasyonun uygulanacağı nesne */
+#yanip-son {
+  animation: yanipSon 3s ease-in-out infinite;
+}
